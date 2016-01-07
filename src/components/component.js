@@ -1,11 +1,11 @@
 'use strict';
 
-require('./component.css');
+import './component.css';
 
-var React = require('react');
+import React from 'react';
 
-var HelloMessage = React.createClass({
-    render: function() {
+class HelloMessage extends React.Component {
+    render() {
         return (
             <h1>
                 <a className="button button-primary" href="javascript:;">
@@ -14,6 +14,6 @@ var HelloMessage = React.createClass({
             </h1>
         );
     }
-});
+}
 
-module.exports = HelloMessage;
+export default HelloMessage;

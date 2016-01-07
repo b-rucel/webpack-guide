@@ -68,6 +68,14 @@ checkout the source code in the js files. now you can use require to bundle css.
 
 
 
+### 04 babel ES2015 (ES6)
+
+if you like to take advantage of es6 syntax with babel you can add a babel preset loader module and add some configuration to .babelrc.
+
+    npm i -D babel-preset-es2015
+
+check out the new js syntax in the source code.
+
 
 
 

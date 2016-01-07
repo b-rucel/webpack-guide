@@ -1,12 +1,12 @@
 'use strict';
 
-require('./styles/normalize.css');
-require('./styles/skeleton.css');
+import './styles/normalize.css';
+import './styles/skeleton.css';
 
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-var Component = require('./components/component');
+import Component from './components/component';
 
 ReactDOM.render(
     <Component />,
