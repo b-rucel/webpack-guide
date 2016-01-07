@@ -79,4 +79,29 @@ check out the new js syntax in the source code.
 
 
 
-    
+### 05 webpack dev server - live reloading
+
+i get tired of running the webpack build command each time i make source code changes to see what i've done. webpack has a tool to help ease the pain a little.
+
+https://webpack.github.io/docs/webpack-dev-server.html
+
+    npm i -g webpack-dev-server
+    npm i -D webpack-dev-server
+
+add more configuration parameters to webpack in order to run the dev server.
+
+    devServer: {
+        contentBase: path.resolve(__dirname, 'build'),
+        historyApiFallback: true
+    }
+
+another line in the package.json to set up script running, or you can run it in commandline this way also
+
+    webpack-dev-server --hot --inline --progress --colors
+
+one important to note with using the webpack-dev-server is that whatever compilation/transpiling is temporary only while running the dev server. to build for production use, you need to run the build command from previous sections.
+
+    npm run watch
+
+now point your browser to http://localhost:8080/ and check out your work.
+

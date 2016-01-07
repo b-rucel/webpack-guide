@@ -4,6 +4,7 @@
   "description": "Guide to getting started with Webpack for asset bundling.",
   "scripts": {
     "build": "webpack --progress --profile --colors",
+    "watch": "webpack-dev-server --hot --inline --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -13,7 +14,8 @@
     "babel-preset-react": "^6.3.13",
     "css-loader": "^0.23.1",
     "style-loader": "^0.13.0",
-    "webpack": "^1.12.10"
+    "webpack": "^1.12.10",
+    "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
     "babel-runtime": "^6.3.19",
