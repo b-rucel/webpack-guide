@@ -26,7 +26,7 @@ add the loader to handle js loading in webpack.config.js
 then take a look at build/bundle.js to see how the bundling is set up.
 
 
-## code
+__code__
 
 check out the source code in src/main.js and src/components/component.js
 
