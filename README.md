@@ -52,3 +52,23 @@ one more configuration file is needed for babel to process react correctly.
     touch .babelrc
 
 
+
+### 03 css
+
+adding css loader to the setup
+
+    mkdir src/styles/
+    npm i -D style-loader css-loader
+
+using normalize and skeleton as the base css framework: http://getskeleton.com
+
+    touch src/components/component.css
+
+checkout the source code in the js files. now you can use require to bundle css. you should note at this point the css rules are global and cacade down.
+
+
+
+
+
+
+    

@@ -12,6 +12,7 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.(js|jsx)?$/, exclude: /node_modules/, loader: "babel?cacheDirectory" },
+            { test: /\.css$/, loader: 'style-loader!css-loader' }
         ]
     }
 };

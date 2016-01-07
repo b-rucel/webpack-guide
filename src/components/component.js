@@ -1,5 +1,7 @@
 'use strict';
 
+require('./component.css');
+
 var React = require('react');
 
 var HelloMessage = React.createClass({
