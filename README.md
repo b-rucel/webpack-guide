@@ -1,2 +1,3 @@
 # webpack-guide
-Something to help with webpack.
+
+Guide to getting started with Webpack for asset bundling.
