@@ -1,9 +1,17 @@
 'use strict';
 
-module.exports = function() {
-    var el = document.createElement('h1');
+var React = require('react');
 
-    el.innerHTML = 'Hello World';
+var HelloMessage = React.createClass({
+    render: function() {
+        return (
+            <h1>
+                <a className="button button-primary" href="javascript:;">
+                    Hello World
+                </a>
+            </h1>
+        );
+    }
+});
 
-    return el;
-};
+module.exports = HelloMessage;

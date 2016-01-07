@@ -7,5 +7,11 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'bundle.js'
+    },
+
+    module: {
+        loaders: [
+            { test: /\.(js|jsx)?$/, exclude: /node_modules/, loader: "babel?cacheDirectory" },
+        ]
     }
 };

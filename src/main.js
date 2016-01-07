@@ -1,5 +1,11 @@
 'use strict';
 
-var component = require('./components/component');
+var React = require('react');
+var ReactDOM = require('react-dom');
 
-document.body.appendChild(component());
+var Component = require('./components/component');
+
+ReactDOM.render(
+    <Component />,
+    document.getElementById('app')
+);
