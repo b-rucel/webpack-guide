@@ -119,3 +119,15 @@ additional loader configuration in webpack.config.js
     { test: /\.(jpg|png)$/i, loader: "url?limit=50000" }
 
 it tells it that images that are 25KB or smaller in size will be converted to a BASE64 string. Also if you have images defined in css then it will inline them in the css file where it was defined.
+
+
+
+
+
+### 07 font loading
+
+the loading of assets also applies to fonts as well. there aren't any additional loader that you need to install for loading fonts.
+
+loader configuration in webpack.config.js is required however.
+
+    
