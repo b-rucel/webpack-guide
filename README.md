@@ -130,4 +130,6 @@ the loading of assets also applies to fonts as well. there aren't any additional
 
 loader configuration in webpack.config.js is required however.
 
-    
+check out the source code in the component.css and component.js.
+
+
