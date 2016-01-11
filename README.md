@@ -105,3 +105,17 @@ one important to note with using the webpack-dev-server is that whatever compila
 
 now point your browser to http://localhost:8080/ and check out your work.
 
+
+
+
+### 06 image loading
+
+you can even require images in your js code that can be used in your react components through webpack also.
+
+    npm i -D url-loader
+
+additional loader configuration in webpack.config.js
+
+    { test: /\.(jpg|png)$/i, loader: "url?limit=50000" }
+
+it tells it that images that are 25KB or smaller in size will be converted to a BASE64 string. Also if you have images defined in css then it will inline them in the css file where it was defined.
