@@ -130,6 +130,9 @@ the loading of assets also applies to fonts as well. there aren't any additional
 
 loader configuration in webpack.config.js is required however.
 
+    { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
+    { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "ffile-loader?name=fonts/[name].[ext]" },
+
 check out the source code in the component.css and component.js.
 
 
